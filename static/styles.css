@@ -1,0 +1,106 @@
+a,
+a:hover,
+a:focus {
+    color: inherit;
+}
+
+body {
+    background-color: #F1F2F3;
+    box-sizing: border-box;
+}
+
+.container-fluid,
+.container {
+    max-width: 1200px;
+}
+
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+.box {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    height: 70px;
+    width: 150px;
+    background-image: linear-gradient(to right, #000000, #0d0c0c, #161515, #1d1c1c, #252323, transparent);
+    opacity: 0.8;
+    border-radius: 5px;
+    z-index: 999;
+    color: #FFF;
+    transition: all linear 0.25s;
+}
+
+.city-card {
+    max-width: 200px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.city-card img {
+    height: 100%;
+    width: 100%;
+    transition: all linear 0.25s;
+}
+
+.city-card .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    font-size: 20px;
+    color: #FFF;
+    z-index: 1000;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+.city-card .profile-username {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #FFF;
+    z-index: 1000;
+    font-size: 10px;
+    transition: all linear 0.25s;
+}
+
+.city-card:hover img {
+    filter: grayscale(100%);
+}
+
+.city-card:hover .profile-name {
+    bottom: 60px;
+}
+
+.city-card:hover .profile-username {
+    bottom: 40px;
+}
+
+.city-card:hover .box {
+    bottom: 35px;
+    /* opacity: 0; */
+}
+
+
+.form-control[type=search] {
+    border: none;
+    border-bottom: 2px solid #6c757d;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.fa {
+    cursor: pointer;
+}
