@@ -45,18 +45,20 @@
           </ul>
         </div>
       </div>
-
+      
       <!-- City cards -->
       <div class="row">
         <h2 class="ms-5">Which City would you like to visit?</h2>
         <hr class="m-3">
+        {% for dest in dests %}
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-4">
-            <div class="city-card"><img src="https://www.holidify.com/images/cmsuploads/compressed/8281_20200403121659.jpg" class="img img-responsive">
+            <div class="city-card"><img src="{{dest.img.url}}" class="img img-responsive">
               <div class="box"></div>
-              <h1 class="profile-name">AHMEDABAD</h1>
-              <h2 class="profile-username">Manchester Of The East</h2>
+              <h1 class="profile-name">{{dest.name}}</h1>
+              <h2 class="profile-username">{{dest.desc}}</h2>
             </div>
         </div>
+        {% endfor%}
       </div>
     </div>
 
